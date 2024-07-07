@@ -5,8 +5,11 @@ import {
 import { Dashboard, dashboardLoader } from "./pages/Dashboard";
 import Error from "./pages/Error";
 
-// layoutss
+// layouts
 import Main, { mainLoader } from "./layout/Main";
+
+// action
+import { logoutAction } from "./action/logout";
 
 const router = createBrowserRouter([
   {
@@ -22,8 +25,8 @@ const router = createBrowserRouter([
         errorElement: <Error />
       },
       {
-        path:"about",
-        element: <p>About</p>,
+        path: "logout",
+        action: logoutAction
       }
     ]
   }
