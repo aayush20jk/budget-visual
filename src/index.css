@@ -28,9 +28,11 @@ svg {
   --lh-1-4: 1.4;
 
   /* colors */
-  --accent: 183 74% 44%;
+  /* --accent: 183 74% 44%; */
+  --accent: 100 74% 44%;
   --bkg: 190 60% 98%;
-  --text: 185 26% 9%;
+  /* --text: 185 26% 9%; */
+  --text: 185 26% 100%;
   --muted: 183 8% 55%;
   --light: 180 14% 85%;
   --warning: 4 66% 63%;
@@ -63,7 +65,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-  background-color: hsl(var(--bkg));
+  /* background-color: hsl(var(--bkg)); */
+  background-color: rgb(34, 32, 32);
   color: hsl(var(--text));
 }
 
@@ -170,7 +173,7 @@ p {
 }
 
 :where(.btn--dark) {
-  --backdrop: hsl(var(--text));
+  --backdrop: rgb(19, 123, 31);
 }
 
 :where(.btn--outline) {
